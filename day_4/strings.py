@@ -13,9 +13,9 @@ print(len(word3))
 word4='python'
 print(word4)
 print(len(word4))
-sentence= space + word1 + word2 + word3 + word4
-print(sentence)
-print(len(sentence))
+string= space + word1 + word2 + word3 + word4
+print(string)
+print(len(string))
 
 space=""
 word5 = 'coding'
@@ -27,16 +27,37 @@ print(len(word6))
 word7 = 'all'
 print(word7)
 print(len(word7))
-sentence2 = space + word5 + word6 + word7
-print(sentence2)
-print(len(sentence2))
+string2 = space + word5 + word6 + word7
+print(string2)
+print(len(string2))
 
-company = sentence2
+company = string2
 
 print(company)
 print(len(company))
 
-company.upper
+print(company.upper())
 
-company.lower
+print(company.lower())
+
+print(company.capitalize())
+print(company.title())
+print(company.swapcase())
+
+string3 = string2 - word5
+
+print(string2.count('coding'))
+
+print(string2.replace('coding', 'python'))
+
+print(string2.replace('all' , 'everyone'))
+
+print(string2.split())
+
+string4 = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+print(string4.split(', '))
+
+print(string2.index)
+print(string2.rindex)
+print(string2.index(10))
 
