@@ -61,3 +61,16 @@ print(string2.index)
 print(string2.rindex)
 print(string2.index(10))
 
+language = 'Python for everyone'
+letter_1 = language[0]
+letter_2 = language[7]
+letter_3 = language[11]
+print(f"{letter_1}{letter_2.upper}{letter_3.upper}")
+
+language2 = 'Coding For All'
+letter_4 = language2[0]
+letter_5 = language2[7]
+letter_6 = language2[11]
+print(f"{letter_4}{letter_5}{letter_6}")
+
+print(language2.count('C'))
