@@ -73,4 +73,15 @@ letter_5 = language2[7]
 letter_6 = language2[11]
 print(f"{letter_4}{letter_5}{letter_6}")
 
-print(language2.count('C'))
+print(language2.find('C'))
+
+print(language2.find('F'))
+
+language3 = 'Coding For All People'
+print(language3.rfind('l'))
+
+language4 = 'You cannot end a sentece with because because because is a conjunction'
+print(language4.index('because'))
+print(language4.rindex('because'))
+
+
