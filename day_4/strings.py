@@ -54,34 +54,32 @@ print(string2.replace('all' , 'everyone'))
 
 print(string2.split())
 
-string4 = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
-print(string4.split(', '))
+print("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon".split(','))
 
 print(string2.index)
 print(string2.rindex)
 print(string2.index(10))
 
-language = 'Python for everyone'
-letter_1 = language[0]
-letter_2 = language[7]
-letter_3 = language[11]
-print(f"{letter_1}{letter_2.upper}{letter_3.upper}")
+language = 'Python For Everyone'.split()
+print(f"{language[0][0] + language[1][0] + language[2][0]}")
+
 
 language2 = 'Coding For All'
-letter_4 = language2[0]
-letter_5 = language2[7]
-letter_6 = language2[11]
-print(f"{letter_4}{letter_5}{letter_6}")
+print(f"{language2[0][0] + language2[1][0] + language2[2][0]}")
 
-print(language2.find('C'))
+print("Coding For All".index('C'))
 
-print(language2.find('F'))
+print("Coding For All".index('F'))
 
-language3 = 'Coding For All People'
-print(language3.rfind('l'))
+print("Coding For All People".rfind('l'))
 
-language4 = 'You cannot end a sentece with because because because is a conjunction'
-print(language4.index('because'))
-print(language4.rindex('because'))
+print('You cannot end a sentence with because because because is a conjunction'.find('because'))
 
+print('You cannot end a sentence with because because because is a conjunction'.rfind('because'))
+
+print('You cannot end a sentence with because because because is a conjunction'.replace('because because because', ' '))
+
+print('You cannot end a sentence with because because because is a conjunction'.find('because'))
+
+print('You cannot end a sentence with because because because is a conjunction'.replace('because because because', ' '))
 
