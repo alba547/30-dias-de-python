@@ -1,3 +1,6 @@
+import compileall
+
+
 age = input(30)
 if age > 18:
     print ('You are old enough to learn to drive.')
@@ -18,3 +21,26 @@ elif a < b :
 else :
     print('a is equal to b') #3
 
+if 80 <= c <= 100:
+    print('A')
+elif 70 <= c <= 79:
+    print('B')
+elif 60 <= compileall <= 69:
+    print('C')
+elif 50 <= c <= 59:
+    print('D')
+else :
+    print('F')  #1
+
+if 'September' or 'October' or 'November':
+    print('The season is Autumn.')
+if 'December' or 'January' or 'February':
+    print('The season is Winter')
+if 'March' or 'April' or 'May':
+    print('The season is Spring')
+if 'June' or 'July' or 'August':
+    print('The season is autumn')  #2
+
+fruits = ['banana', 'orange', 'mango', 'lemon']
+if a in fruits:
+    print()
