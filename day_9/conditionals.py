@@ -2,7 +2,7 @@ import compileall
 
 
 age = input(30)
-if age > 18:
+if age >= 18:
     print ('You are old enough to learn to drive.')
 age = input(15)
 if age < 18:
@@ -20,16 +20,21 @@ elif a < b :
         print ('a is smaller than b')
 else :
     print('a is equal to b') #3
-
-if 80 <= c <= 100:
+mark = int(input('Un número entre 1 y 100'))
+if 80 <= mark <= 100:
+    score = 'A'
     print('A')
-elif 70 <= c <= 79:
+elif 70 <= mark <= 79:
+    score = 'B'
     print('B')
-elif 60 <= compileall <= 69:
+elif 60 <= mark <= 69:
+    score = 'C'
     print('C')
-elif 50 <= c <= 59:
+elif 50 <= mark <= 59:
+    score = 'D'
     print('D')
 else :
+    score = 'F'
     print('F')  #1
 
 if 'September' or 'October' or 'November':
@@ -42,5 +47,8 @@ if 'June' or 'July' or 'August':
     print('The season is autumn')  #2
 
 fruits = ['banana', 'orange', 'mango', 'lemon']
-if a in fruits:
-    print()
+fruit = int(input('Una fruta'))
+if fruit in fruits:
+    print('That fruit already exist in the list')
+else:
+    print(list.append(fruit))
